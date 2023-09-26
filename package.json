@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx cypress run --headed"
+    "start": "npx cypress run --headed",
+    "open": "cypress open"
   },
   "repository": {
     "type": "git",

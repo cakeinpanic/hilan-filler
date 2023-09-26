@@ -1,4 +1,4 @@
-describe('File upload', () => {
+describe('Fill days', () => {
   const hilanUrl = Cypress.env('hilanUrl')
   const user = Cypress.env('user')
   const password = Cypress.env('password')
@@ -34,7 +34,7 @@ describe('File upload', () => {
 
   it('fills all missing reports', () => {
     login()
-    cy.visit(hilanUrl + '/Hilannetv2/Attendance/calendarpage.aspx?isPersonalFileMode=true&ReportPageMode=2');
+    cy.visit(hilanUrl + '/Hilannetv2/Attendance/calendarpage.aspx?isOnSelf=true');
     cy.wait(500);
 
     // fill current day
